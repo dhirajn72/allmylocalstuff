@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="org.hibernate.test.collectionmapping.persistence">
+	<class name="Student" table="student" lazy="false">
+		<cache usage="read-only" />
+		<id name="sid" type="int" column="sid">
+			<generator class="increment" />
+		</id>
+
+		<property name="sname" type="string" />
+		<property name="dob" type="string" />
+		<property name="qualification" column="quali" type="string" />
+
+		<array name="courses" table="courses" cascade="delete" fetch="select">
+			<!-- This is the caching strategy specifies the nature of cache, whether 
+				or not it will be read-ony or read-write -->
+			<cache usage="read-only" />
+			<key column="sid" />
+			<index column="idx" type="int" />
+			<element column="course" type="string" />
+
+		</array>
+		<list name="emails" table="emails" cascade="delete" fetch="select">
+			<!-- This is the caching strategy specifies the nature of cache, whether 
+				or not it will be read-ony or read-write -->
+			<cache usage="read-only" />
+			<key column="sid" />
+			<index column="idx" type="int" />
+			<element column="emailid" type="string" />
+		</list>
+		<set name="phones" table="phones" cascade="delete" fetch="select">
+			<!-- This is the caching strategy specifies the nature of cache, whether 
+				or not it will be read-ony or read-write -->
+			<cache usage="read-only" />
+			<key column="sid" />
+			<element column="phoneno" type="long" />
+		</set>
+		<map name="refs" table="rfrn" cascade="delete" fetch="select">
+			<!-- This is the caching strategy specifies the nature of cache, whether 
+				or not it will be read-ony or read-write -->
+			<cache usage="read-only" />
+			<key column="sid" />
+			<index column="rname" type="string" />
+			<element column="rphone" type="long" />
+		</map>
+	</class>
+</hibernate-mapping>

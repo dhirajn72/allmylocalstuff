@@ -1,0 +1,4 @@
+org/hibernate/test/collectionmapping/clients/Test2.class
+org/hibernate/test/collectionmapping/persistence/Student.class
+org/hibernate/test/util/HibernateUtil.class
+org/hibernate/test/collectionmapping/clients/Test1.class
