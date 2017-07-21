@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.spring.controller" />
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.InternalResourceView"></property>
+		<property name="prefix" value="/WEB-INF/pages/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages" />
+	</bean>
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/db21" />
+		<property name="username" value="root" />
+		<property name="password" value="singh99" />
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.hibernate.persistence</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<map>
+				<entry key="hibernate.hbm2ddl.auto" value="update" />
+				<entry key="hibernate.show_sql" value="true" />
+				<entry key="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+				<!-- <entry key="hibernate.cache.region.factory_class" value=" org.hibernate.cache.ehcache.EhCacheRegionFactory"> 
+					</entry> -->
+			</map>
+		</property>
+	</bean>
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<bean id="customerService" class="com.hibernate.integrationLayer.CustomerService"></bean>
+	<bean id="customerValidator" class="com.spring.validator.CustomerValidator"></bean>
+	<bean id="customerDAO" class="com.hibernate.persistence.CusomerDAOImpl"></bean>
+
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="com.spring.exception.CustomerNotFoundException">updateData</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="emailCommandValidator" class="com.spring.validator.EmailCommandValidator"></bean>
+</beans>
