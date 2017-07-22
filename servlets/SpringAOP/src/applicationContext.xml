@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+	<context:annotation-config />
+	<aop:aspectj-autoproxy />
+
+	<bean id="securityService" class="com.java.core.security.SecurityService" />
+	<bean id="loggingService" class="com.java.core.security.LoggingService" />
+	<bean id="transactionService" class="com.java.core.security.TransactionService" />
+	<bean id="accountService" class="com.java.core.AccountService" />
+	<bean id="customerService" class="com.java.core.CustomerService" />
+
+	<aop:config>
+		<aop:pointcut id="PC1"
+			expression="execution(* com.java.core.AccountService.de*(..))" />
+		<aop:aspect ref="securityService">
+			<aop:around method="verifyUser" pointcut-ref="PC1" />
+		</aop:aspect>
+		<aop:aspect ref="loggingService">
+			<aop:around method="logging" pointcut-ref="PC1" />
+		</aop:aspect>
+
+	</aop:config>
+
+
+
+
+
+
+
+
+
+</beans>
