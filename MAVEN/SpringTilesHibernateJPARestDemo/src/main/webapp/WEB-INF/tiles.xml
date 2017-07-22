@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="BaseTemplate" template="/WEB-INF/templates/maintemplate.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/templates/header.jsp" />
+		<put-attribute name="LMENU" value="/WEB-INF/templates/lmenu.jsp" />
+		<put-attribute name="BODY" value="" />
+		<put-attribute name="FOOTER" value="/WEB-INF/templates/footer.jsp" />
+	</definition>
+	<definition name="HomeDef" extends="BaseTemplate">
+		<put-attribute name="BODY" value="/WEB-INF/pages/welcome.jsp" />
+	</definition>
+	<definition name="AddDef" extends="BaseTemplate">
+		<put-attribute name="BODY" value="/WEB-INF/pages/addCredentials.jsp" />
+	</definition>
+	<definition name="AddSuccessDef" extends="BaseTemplate">
+		<put-attribute name="BODY" value="/WEB-INF/pages/addCredentialsSuccess.jsp" />
+	</definition>
+
+</tiles-definitions>

@@ -1,0 +1,30 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<filter>
+		<filter-name>TestFilter</filter-name>
+		<filter-class>com.java.test.filter.TestFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>TestFilter</filter-name>
+		<url-pattern>/register.do</url-pattern>
+	</filter-mapping>
+
+	<listener>
+		<listener-class>com.java.test.listener.TestListener</listener-class>
+	</listener>
+
+
+	<servlet>
+		<servlet-name>TestServlet</servlet-name>
+		<servlet-class>com.java.test.TestServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet</servlet-name>
+		<url-pattern>/register.do</url-pattern>
+	</servlet-mapping>
+</web-app>

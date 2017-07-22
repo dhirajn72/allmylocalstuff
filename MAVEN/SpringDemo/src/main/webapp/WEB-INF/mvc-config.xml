@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+	<context:component-scan base-package="com.springframework.web.controller" />
+	<mvc:annotation-driven />
+	<tx:annotation-driven />
+
+	<bean id="tilesConfigurer"
+		class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles.xml</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basename" value="messages"></property>
+	</bean>
+	<bean class="org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.tiles3.TilesView"></property>
+	</bean>
+	<bean id="propertyPlaceholderConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:mysqlDS.properties</value>
+			</list>
+		</property>
+	</bean>
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${mysql.dc}"></property>
+		<property name="url" value="${mysql.url}"></property>
+		<property name="username" value="${mysql.un}"></property>
+		<property name="password" value="${mysql.ps}"></property>
+	</bean>
+	<bean id="annotationSessionFactoryBean"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource"></property>
+		<property name="packagesToScan">
+			<list>
+				<value>com.hibernate.persistence</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<map>
+				<entry key="hibernate.show_sql" value="true" />
+				<entry key="hibernate.hbm2ddl.auto" value="update" />
+				<entry key="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect" />
+			</map>
+		</property>
+	</bean>
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate4.HibernateTemplate"
+		autowire="constructor">
+	</bean>
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager"
+		autowire="constructor">
+	</bean>
+
+	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop
+					key="com.springframework.web.controller.exceptions.CustomerNotFound">DeleteCust</prop>
+				<prop
+					key="com.springframework.web.controller.exceptions.CustomerNotAvailable">CustSearch</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="customerCommandValidation"
+		class="com.springframework.web.command.validations.CustomerCommandValidation"></bean>
+	<bean id="customerDaoImpl" class="com.hibernate.persistence.CustomerDaoImpl">
+	</bean>
+	<bean id="cidCommandValidation"
+		class="com.springframework.web.command.validations.CidCommandValidation"></bean>
+
+
+</beans>

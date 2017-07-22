@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="BaseDef" template="/WEB-INF/view/MainLayout.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/view/header.jsp" />
+		<put-attribute name="LMENU" value="/WEB-INF/view/lmenu.jsp" />
+		<put-attribute name="BODY" value="" />
+		<put-attribute name="FOOTER" value="/WEB-INF/view/footer.jsp" />
+	</definition>
+	<definition name="HomeDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/welcome.jsp" />
+	</definition>
+</tiles-definitions>
+
+
+

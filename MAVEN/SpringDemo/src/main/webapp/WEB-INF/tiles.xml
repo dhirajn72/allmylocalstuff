@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="BaseDef" template="/WEB-INF/view/MainLayout.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/view/header.jsp"></put-attribute>
+		<put-attribute name="LMENU" value="/WEB-INF/view/lmenu.jsp"></put-attribute>
+		<put-attribute name="BODY" value=""></put-attribute>
+		<put-attribute name="FOOTER" value="/WEB-INF/view/footer.jsp"></put-attribute>
+	</definition>
+	<definition name="HomeDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/welcome.jsp"></put-attribute>
+	</definition>
+	<definition name="AddCustDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/addCustomer.jsp"></put-attribute>
+	</definition>
+	<definition name="AddSuccessDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/addSuccess.jsp"></put-attribute>
+	</definition>
+	<definition name="DeleteCust" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/deleteCustomer.jsp"></put-attribute>
+	</definition>
+	<definition name="DeleteSuccess" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/deleteSuccess.jsp"></put-attribute>
+	</definition>
+	<definition name="CustSearch" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/searchCustomer.jsp"></put-attribute>
+	</definition>
+	<definition name="SearchSuccess" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/searchSuccess.jsp"></put-attribute>
+	</definition>
+	<definition name="UpdateDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/searchSuccess.jsp"></put-attribute>
+	</definition>
+	<definition name="UpdateSuccessDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/view/updateSuccess.jsp"></put-attribute>
+	</definition>
+
+
+
+</tiles-definitions>
+
+
+
+
+
