@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE college PUBLIC "/home/dhiraj/college.dtd" >
+<college>
+	<student sid="101">
+		<sname>
+			<fname>dhiraj</fname>
+			<lname>kumar</lname>
+		</sname>
+		<email>
+			<oemail>dhiraj@test.com</oemail>
+			<pemail>singh@test.com</pemail>
+		</email>
+		<phone>9999999</phone>
+	</student>
+</college>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT jlc (student*,course+)>
+<!ELEMENT student (sname+,email)>
+<!ELEMENT course (cname+,date+,fee+)>
+<!ELEMENT email (oemail,nemail)>
+<!ELEMENT sname (#PCDATA)>
+<!ELEMENT oemail (#PCDATA)>
+<!ELEMENT nemail (#PCDATA)>
+<!ELEMENT cname (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT fee (#PCDATA)>
+
+<!ATTLIST student sid CDATA #REQUIRED>
+<!ATTLIST course cid CDATA #REQUIRED>
+
+<!ENTITY company "JLCCompany">

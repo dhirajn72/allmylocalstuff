@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jlc PUBLIC "studenty" "student.dtd" >
+<jlc>
+  <student sid="">
+    <sname>sname</sname>
+    <email>
+      <oemail>oemail</oemail>
+      <nemail>nemail</nemail>
+    </email>
+  </student>
+  <course cid="">
+    <cname>cname</cname>
+    <date>date</date>
+    <fee>fee</fee>
+  </course>
+</jlc>
