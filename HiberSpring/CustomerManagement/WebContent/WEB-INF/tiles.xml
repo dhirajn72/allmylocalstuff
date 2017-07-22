@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD 
+	Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" > -->
+	
+	<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="BaseDef" template="/WEB-INF/webpages/mainPageLayout.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/webpages/header.jsp" />
+		<put-attribute name="LMENU" value="/WEB-INF/webpages/lmenu.jsp" />
+		<put-attribute name="BODY" value="" />
+		<put-attribute name="FOOTER" value="/WEB-INF/webpages/footer.jsp" />
+	</definition>
+
+	<definition name="HomeDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/webpages/welcome.jsp" />
+	</definition>
+
+	<definition name="ShowAddCustomerPage" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/webpages/addCustomer.jsp" />
+	</definition>
+
+	<definition name="AddCustomerSuccess" extends="BaseDef">
+		<put-attribute name="BODY"
+			value="/WEB-INF/webpages/addCustomerSuccess.jsp" />
+	</definition>
+	<definition name="DeletePage" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/webpages/deletePage.jsp" />
+	</definition>
+
+	<definition name="DeleteSuccess" extends="BaseDef">
+		<put-attribute name="BODY"
+			value="/WEB-INF/webpages/deleteSuccess.jsp" />
+	</definition>
+	<definition name="SearchCustPage" extends="BaseDef">
+		<put-attribute name="BODY"
+			value="/WEB-INF/webpages/searchCustomer.jsp" />
+	</definition>
+
+	<definition name="SearchSuccessDef" extends="BaseDef">
+		<put-attribute name="BODY"
+			value="/WEB-INF/webpages/searchSuccessCustomer.jsp" />
+	</definition>
+	<definition name="UpdateCustomerDef" extends="BaseDef">
+		<put-attribute name="BODY"
+			value="/WEB-INF/webpages/updateCustomerSuccess.jsp" />
+	</definition>
+
+	<definition name="UpdateSuccess" extends="BaseDef">
+		<put-attribute name="BODY"
+			value="/WEB-INF/webpages/updateSuccess.jsp" />
+	</definition>
+
+
+</tiles-definitions>
+
+
