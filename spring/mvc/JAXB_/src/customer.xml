@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+	<customer>
+		<account>
+			<accno>101</accno>
+			<atype>CA</atype>
+			<bal>10000.0</bal>
+		</account>
+		<cid>1111</cid>
+		<cname>DK</cname>
+		<phone>99999</phone>
+	</customer>
+	<customer>
+		<account>
+			<accno>102</accno>
+			<atype>SA</atype>
+			<bal>20000.0</bal>
+		</account>
+		<cid>2222</cid>
+		<cname>singh</cname>
+		<phone>88888</phone>
+	</customer>
+	<customer>
+		<account>
+			<accno>103</accno>
+			<atype>CA</atype>
+			<bal>30000.0</bal>
+		</account>
+		<cid>3333</cid>
+		<cname>kumar</cname>
+		<phone>99999</phone>
+	</customer>
+	<customer>
+		<account>
+			<accno>104</accno>
+			<atype>SA</atype>
+			<bal>40000.0</bal>
+		</account>
+		<cid>4444</cid>
+		<cname>SRI</cname>
+		<phone>99999</phone>
+	</customer>
+</customers>

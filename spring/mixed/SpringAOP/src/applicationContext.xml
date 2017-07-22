@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+	<context:annotation-config />
+	<aop:aspectj-autoproxy />
+
+	<bean id="security" class="com.java.spring.Security" />
+	<bean id="logginService" class="com.java.spring.LogginService" />
+	<bean id="transaction" class="com.java.spring.Transaction" />
+
+	<aop:config>
+		<aop:pointcut expression="execution(* com.java.spring.AccountService.de*(..))"
+			id="PC1" />
+		<aop:pointcut expression="execution(* com.java.spring.AccountService.wi*(..))"
+			id="PC2" />
+		<aop:pointcut expression="execution(* com.java.spring.AccountService.ba*(..))"
+			id="PC3" />
+
+		<aop:aspect ref="security">
+			<aop:before method="verifySecurity" pointcut-ref="PC1" />
+			<aop:before method="verifySecurity" pointcut-ref="PC2" />
+			<aop:before method="verifySecurity" pointcut-ref="PC3" />
+			<aop:after-returning method="verifySecurity"
+				pointcut-ref="PC1" />
+			<aop:after-returning method="verifySecurity"
+				pointcut-ref="PC2" />
+			<aop:after-returning method="verifySecurity"
+				pointcut-ref="PC3" />
+			<aop:after-throwing method="expnHandler"
+				pointcut-ref="PC1" />
+
+
+		</aop:aspect>
+		<aop:aspect ref="logginService">
+			<aop:before method="logginCheck" pointcut-ref="PC1" />
+			<aop:before method="logginCheck" pointcut-ref="PC2" />
+			<aop:before method="logginCheck" pointcut-ref="PC3" />
+			<aop:after-returning method="logginCheck"
+				pointcut-ref="PC1" />
+			<aop:after-returning method="logginCheck"
+				pointcut-ref="PC2" />
+			<aop:after-returning method="logginCheck"
+				pointcut-ref="PC3" />
+
+		</aop:aspect>
+		<aop:aspect ref="transaction">
+			<aop:before method="transactionSecurityCheck" pointcut-ref="PC1" />
+			<aop:before method="transactionSecurityCheck" pointcut-ref="PC2" />
+			<aop:before method="transactionSecurityCheck" pointcut-ref="PC3" />
+			<aop:after-returning method="transactionSecurityCheck" pointcut-ref="PC1" />
+			<aop:after-returning method="transactionSecurityCheck" pointcut-ref="PC2" />
+			<aop:after-returning method="transactionSecurityCheck" pointcut-ref="PC3" />
+		</aop:aspect>
+	</aop:config>
+	<bean id="as" class="com.java.spring.AccountService" />
+
+</beans>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+	<customer>
+		<account>
+			<accno>101</accno>
+			<balance>10000.0</balance>
+			<aType>CA</aType>
+		</account>
+		<cid>99</cid>
+		<cname>Singh</cname>
+		<email>singh</email>
+		<phone>999999</phone>
+	</customer>
+	<customer>
+		<account>
+			<accno>101</accno>
+			<balance>10000.0</balance>
+			<aType>CA</aType>
+		</account>
+		<cid>88</cid>
+		<cname>KUMAR</cname>
+		<email>kumar@gmail.com</email>
+		<phone>8888888</phone>
+	</customer>
+	<customer>
+		<account>
+			<accno>101</accno>
+			<balance>10000.0</balance>
+			<aType>CA</aType>
+		</account>
+		<cid>77</cid>
+		<cname>DK</cname>
+		<email>dk@yahoo.com</email>
+		<phone>777777</phone>
+	</customer>
+</customers>

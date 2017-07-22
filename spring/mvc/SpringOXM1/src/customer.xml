@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+	<customer>
+		<account>
+			<accnoe>10</accnoe>
+			<atype>SA</atype>
+			<bal>10000.0</bal>
+		</account>
+		<cid>CUST-1</cid>
+		<cname>DK</cname>
+		<email>dk@gmail.com</email>
+		<phone>999999</phone>
+	</customer>
+	<customer>
+		<account>
+			<accnoe>11</accnoe>
+			<atype>SA</atype>
+			<bal>20000.0</bal>
+		</account>
+		<cid>CUST-2</cid>
+		<cname>SINGH</cname>
+		<email>singh@gmail.com</email>
+		<phone>88888</phone>
+	</customer>
+	<customer>
+		<account>
+			<accnoe>12</accnoe>
+			<atype>CA</atype>
+			<bal>10000.0</bal>
+		</account>
+		<cid>CUST-3</cid>
+		<cname>KUMAR</cname>
+		<email>kumar@gmail.com</email>
+		<phone>7777777</phone>
+	</customer>
+</customers>

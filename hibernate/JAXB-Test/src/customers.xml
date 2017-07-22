@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+	<customer>
+		<age>25</age>
+		<cid>11</cid>
+		<cname>singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+	<customer>
+		<age>25</age>
+		<cid>12</cid>
+		<cname>singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+	<customer>
+		<age>25</age>
+		<cid>13</cid>
+		<cname>singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+	<customer>
+		<age>25</age>
+		<cid>14</cid>
+		<cname>singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+</customers>

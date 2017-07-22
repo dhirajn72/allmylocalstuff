@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN" "tiles-config_1_1.dtd" > -->
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+<!-- 	<definition name="BaseDef" path="/WEB-INF/jsp/MainLayout.jsp">
+		<put name="HEADER" value="/WEB-INF/jsp/header.jsp" />
+		<put name="LMENU" value="/WEB-INF/jsp/lmenu.jsp" />
+		<put name="BODY" value="" />
+		<put name="FOOTER" value="/WEB-INF/jsp/footer.jsp" />
+	</definition>
+	<definition name="HomeDef" extends="BaseDef">
+		<put name="BODY" value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+	<definition name="AddStudent" extends="BaseDef">
+		<put name="BODY" value="/WEB-INF/jsp/addStudent.jsp" />
+	</definition>
+	<definition name="AddStudentSuccess" extends="BaseDef">
+		<put name="BODY" value="/WEB-INF/jsp/addStudentSuccess.jsp" />
+	</definition>
+	<definition name="SearchSidDef" extends="BaseDef">
+		<put name="BODY" value="/WEB-INF/jsp/searchStudent.jsp" />
+	</definition>
+ -->
+	<definition name="BaseDef" template="/WEB-INF/jsp/MainLayout.jsp">
+		<put-attribute name="HEADER" value="/WEB-INF/jsp/header.jsp" />
+		<put-attribute name="LMENU" value="/WEB-INF/jsp/lmenu.jsp" />
+		<put-attribute name="BODY" value="" />
+		<put-attribute name="FOOTER" value="/WEB-INF/jsp/footer.jsp" />
+		</definition>
+	
+	<definition  name="HomeDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/jsp/welcome.jsp" />
+	</definition>
+	<definition name="AddStudent" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/jsp/addStudent.jsp" />
+	</definition>
+	<definition name="AddStudentSuccess" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/jsp/addStudentSuccess.jsp" />
+	</definition>
+	<definition name="SearchSidDef" extends="BaseDef">
+		<put-attribute name="BODY" value="/WEB-INF/jsp/searchStudent.jsp" />
+	</definition>
+
+
+
+</tiles-definitions>

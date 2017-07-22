@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+
+
+	<context:annotation-config />
+
+	<bean id="customEditorConfigurer"
+		class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="com.spring.propertyeditorsupport.StudentID" value="com.spring.propertyeditorsupport.SIDEditor" />
+				<entry key="java.util.List" value="com.spring.propertyeditorsupport.EmailEditor" />
+			</map>
+		</property>
+	</bean>
+
+	<bean id="student" class="com.spring.propertyeditorsupport.Student">
+		<property name="studentID" value="B99-099" />
+		<property name="sname" value="Dhiraj Singh" />
+		<property name="email" value="dhiraj@gmail.com" />
+		<property name="phone" value="9743854499" />
+		<property name="age" value="25" />
+		<property name="emails"
+			value="dhiraj@yahoo.com,singh@yahoo.com,kumar@yahoo.com,sri@yahoo.com" />
+		<property name="phones">
+			<list>
+				<value>9999999</value>
+				<value>8888888</value>
+				<value>7777777</value>
+				<value>6666666</value>
+			</list>
+		</property>
+	</bean>
+
+
+
+
+
+
+
+
+</beans>

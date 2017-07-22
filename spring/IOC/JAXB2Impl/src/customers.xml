@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+	<customer>
+		<account>
+			<accno>101.0</accno>
+			<atype>SA</atype>
+			<bal>10000.0</bal>
+		</account>
+		<cid>C-001</cid>
+		<cname>Singh</cname>
+		<email>singh@gmail.com</email>
+	</customer>
+	<customer>
+		<account>
+			<accno>102.0</accno>
+			<atype>SA</atype>
+			<bal>10000.0</bal>
+		</account>
+		<cid>C-002</cid>
+		<cname>DK</cname>
+		<email>dk@gmail.com</email>
+	</customer>
+	<customer>
+		<account>
+			<accno>103.0</accno>
+			<atype>SA</atype>
+			<bal>10000.0</bal>
+		</account>
+		<cid>C-003</cid>
+		<cname>Kumar</cname>
+		<email>kumar@gmail.com</email>
+	</customer>
+</customers>

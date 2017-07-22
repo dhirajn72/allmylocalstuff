@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+	<context:annotation-config />
+	<aop:aspectj-autoproxy />
+
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+		<property name="customEditors">
+			<map>
+				<entry key="com.java.core.SID">
+					<value>com.java.core.SIDEditor</value>
+				</entry>
+				<entry key="java.util.List">
+					<value>com.java.core.ListEditor</value>
+				</entry>
+
+			</map>
+		</property>
+	</bean>
+
+
+	<bean id="student" class="com.java.core.Student">
+		<property name="sid" value="B-001" />
+		<property name="sname" value="Singh" />
+		<property name="email" value="dhiraj@gmail.com" />
+		<property name="phone" value="9743854499" />
+		<property name="phones">
+			<list>
+				<value>9934369400</value>
+				<value>9934369401</value>
+				<value>9934369402</value>
+				<value>9934369403</value>
+			</list>
+		</property>
+		<property name="emails">
+			<list>
+				<value>dhiraj@gmail.com</value>
+				<value>dhiraj@yahoo.com</value>
+				<value>dhiraj@facebook.com</value>
+			</list>
+		</property>
+	</bean>
+</beans>

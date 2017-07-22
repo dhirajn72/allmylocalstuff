@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+    <customer>
+        <account>
+            <accType>SA</accType>
+            <accno>SBI-099</accno>
+            <bal>100000.0</bal>
+        </account>
+        <cid>101</cid>
+        <cname>Dhiraj</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customer>
+    <customer>
+        <account>
+            <accType>SA</accType>
+            <accno>SBI-099</accno>
+            <bal>100000.0</bal>
+        </account>
+        <cid>101</cid>
+        <cname>Dhiraj</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customer>
+    <customer>
+        <account>
+            <accType>SA</accType>
+            <accno>SBI-099</accno>
+            <bal>100000.0</bal>
+        </account>
+        <cid>101</cid>
+        <cname>Dhiraj</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customer>
+</customers>

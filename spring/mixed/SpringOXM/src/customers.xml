@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+	<customer>
+		<account>
+			<accType>CA</accType>
+			<accno>SBI-001</accno>
+			<bal>10000.0</bal>
+		</account>
+		<cid>101</cid>
+		<cname>Singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+	<customer>
+		<account>
+			<accType>CA</accType>
+			<accno>SBI-001</accno>
+			<bal>10000.0</bal>
+		</account>
+		<cid>101</cid>
+		<cname>Singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+	<customer>
+		<account>
+			<accType>CA</accType>
+			<accno>SBI-001</accno>
+			<bal>10000.0</bal>
+		</account>
+		<cid>101</cid>
+		<cname>Singh</cname>
+		<email>singh@gmail.com</email>
+		<phone>9743854499</phone>
+	</customer>
+</customers>
