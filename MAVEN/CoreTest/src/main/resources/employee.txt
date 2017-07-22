@@ -1,0 +1,8 @@
+Id Name salary Phone
+22 Singh 50000 97534
+23 dk 44000 97534
+24 kumar 55000 97534
+25 dhiraj 30000 97534
+26 chandu 70000 97534
+28 alok 40000 97534
+ 

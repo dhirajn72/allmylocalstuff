@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customers>
+    <customers>
+        <address>
+            <aid>42</aid>
+            <pin>560097</pin>
+            <state>KA</state>
+            <street>MS Palya</street>
+        </address>
+        <age>25</age>
+        <cid>99</cid>
+        <cname>Dhiraj Kumar</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customers>
+    <customers>
+        <address>
+            <aid>42</aid>
+            <pin>560097</pin>
+            <state>KA</state>
+            <street>MS Palya</street>
+        </address>
+        <age>25</age>
+        <cid>99</cid>
+        <cname>Dhiraj Kumar</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customers>
+    <customers>
+        <address>
+            <aid>42</aid>
+            <pin>560097</pin>
+            <state>KA</state>
+            <street>MS Palya</street>
+        </address>
+        <age>25</age>
+        <cid>99</cid>
+        <cname>Dhiraj Kumar</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customers>
+    <customers>
+        <address>
+            <aid>42</aid>
+            <pin>560097</pin>
+            <state>KA</state>
+            <street>MS Palya</street>
+        </address>
+        <age>25</age>
+        <cid>99</cid>
+        <cname>Dhiraj Kumar</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customers>
+    <customers>
+        <address>
+            <aid>42</aid>
+            <pin>560097</pin>
+            <state>KA</state>
+            <street>MS Palya</street>
+        </address>
+        <age>25</age>
+        <cid>99</cid>
+        <cname>Dhiraj Kumar</cname>
+        <email>dhiraj@gmail.com</email>
+        <phone>9743854499</phone>
+    </customers>
+</customers>
