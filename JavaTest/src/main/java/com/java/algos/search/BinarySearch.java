@@ -1,4 +1,4 @@
-package com.java.algos;
+package com.java.algos.search;
 
 /**
  * The {@code BinarySearch} class provides a static method for binary searching

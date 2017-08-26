@@ -1,4 +1,4 @@
-package com.java.algos;
+package com.java.algos.search;
 
 import java.util.Arrays;
 
@@ -23,7 +23,7 @@ public class BinarySearchClient {
 		
 	//	System.out.println("Result: "+BinarySearch.indexOf(whitelist, 28));
 		
-		System.out.println(BinarySearchAlgo.indexOf(whitelist, 45));
+		System.out.println(BinarySearchAlgorithm.indexOf(whitelist, 45));
 		
 		
 		
