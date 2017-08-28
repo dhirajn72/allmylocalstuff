@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class MergeSort {
 	public static void main(String[] args) {
-		int[] arr = { 67, 12, 34, 98, 25, 65, 78 };
+		//int[] arr = { 67, 12, 34, 98, 25, 65, 78 };
+		int[] arr = { 67, 12, 34};
 
 		System.out.println("Before Sorting: " + Arrays.toString(arr));
 		Merge_sort.sort(arr, 0, arr.length - 1);
