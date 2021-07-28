@@ -20,7 +20,7 @@ public class Test1 {
 			entityTransaction = entityManager.getTransaction();
 			entityTransaction.begin();
 			Customer customer = new Customer("Singh", "singh@yahoo.com",
-					"9743854499", "Ranchi", 24);
+					"12345", "Ranchi", 24);
 
 			entityManager.persist(customer);
 			entityTransaction.commit();

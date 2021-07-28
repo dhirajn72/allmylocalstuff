@@ -11,7 +11,7 @@ public class Test {
 				"applicationContext.xml");
 
 		CustomerTO to = new CustomerTO(99, "Singh", "singh@gmail.com",
-				"9743854499");
+				"12345");
 		CustomerDAOImpl daoImpl = (CustomerDAOImpl) applicationContext
 				.getBean("customerDAOImpl");
 		daoImpl.addCustomer(to);

@@ -17,21 +17,21 @@ public class Test1 {
 			entityTransaction.begin();
 
 			Customer customer = new Customer("Singh", "singh@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer);
 			Address address = new Address("HEC", "Jharkhand", "India");
 			entityManager.persist(address);
 			customer.setAddress(address);
 
 			Customer customer1 = new Customer("kumar", "kumar@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer1);
 			Address address1 = new Address("Aurangabad", "Bihar", "India");
 			entityManager.persist(address1);
 			customer1.setAddress(address1);
 
 			Customer customer2 = new Customer("Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer2);
 			Address address2 = new Address("chhakanBigha", "Bihar", "India");
 			entityManager.persist(address2);

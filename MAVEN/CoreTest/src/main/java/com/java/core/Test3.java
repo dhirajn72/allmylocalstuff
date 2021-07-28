@@ -12,7 +12,7 @@ public class Test3 {
 			ObjectOutputStream objectOutputStream = new ObjectOutputStream(
 					fileOutputStream);
 			Customer customer = new Customer(99, "dhiraj", "dhiraj@gmail.com",
-					"9742765205");
+					"12345");
 			objectOutputStream.writeObject(customer);
 			System.out.println("Serialized !! ");
 

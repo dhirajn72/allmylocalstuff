@@ -11,7 +11,7 @@ import java.io.Serializable;
 public class Test3 {
 	public static void main(String[] args) {
 		Student student = new Student(99, "dhiraj", "dk@gmail.com",
-				"9743854499");
+				"12345");
 		try {
 			FileOutputStream fileOutputStream = new FileOutputStream(
 					"src/stud.ser");

@@ -16,7 +16,7 @@ public class Test1 {
 		Address address = new Address(42, "MS Palya", "KA", 560097);
 
 		Customer customer = new Customer(99, "Dhiraj Kumar",
-				"dhiraj@gmail.com", "9743854499", 25, address);
+				"dhiraj@gmail.com", "12345", 25, address);
 		Customers customers = new Customers();
 		customers.addCustomer(customer);
 		customers.addCustomer(customer);

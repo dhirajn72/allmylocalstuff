@@ -55,7 +55,7 @@ public class MainController {
 			st.setSid(sid);
 			st.setSname("Dhiraj");
 			st.setEmail("dhiraj@gmail.com");
-			st.setPhone("9743854499");
+			st.setPhone("12345");
 			st.setAge("25");
 			httpServletRequest.setAttribute("ST", st);
 			page = "home";

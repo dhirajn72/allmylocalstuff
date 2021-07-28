@@ -17,7 +17,7 @@ public class Test1 {
 			Session session = sessionFactory.openSession();
 			transaction = session.beginTransaction();
 			Customer customer = new Customer("Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 
 			session.save(customer);
 			Vehicle vehicle = new Vehicle("Mercedes", "M-99");

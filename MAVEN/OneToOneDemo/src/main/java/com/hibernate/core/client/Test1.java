@@ -20,14 +20,14 @@ public class Test1 {
 			Address address = new Address("KA", "Bangaluru", "India");
 			session.save(address);
 			Customer customer = new Customer("Singh", "singh@gmail.com",
-					"9743854499", "25");
+					"12345", "25");
 			session.save(customer);
 			customer.setAddress(address);
 
 			Address address2 = new Address("Maharashta", "Pune", "India");
 			session.save(address2);
 			Customer customer2 = new Customer("Kumar", "kumar@gmail.com",
-					"9743854499", "25");
+					"12345", "25");
 			session.save(customer2);
 			customer2.setAddress(address2);
 

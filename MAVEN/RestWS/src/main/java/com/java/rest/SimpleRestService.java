@@ -22,7 +22,7 @@ public class SimpleRestService {
 	public Customers getSomething() {
 
 		Customer customer = new Customer(99, "Dhiraj", "dhiraj@gmail.com",
-				"9743854499");
+				"12345");
 		Customers c = new Customers();
 		c.getCustomers().add(customer);
 		c.getCustomers().add(customer);

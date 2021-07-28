@@ -9,8 +9,8 @@ public class Test {
 
 		StudentDAO dao = StudentDAOFactory.getStudentDAO();
 		WeekendStudent weekendStudent = new WeekendStudent("DK",
-				"dk@gmail.com", "9743854499", "Singh", "singh@gmail.com",
-				"9743854499", "kumar", "kumar@gmail.com", "9742765205");
+				"dk@gmail.com", "12345", "Singh", "singh@gmail.com",
+				"12345", "kumar", "kumar@gmail.com", "12345");
 		// dao.addStudent(weekendStudent);
 
 		WeekendStudent student = (WeekendStudent) dao.getStudent(1);

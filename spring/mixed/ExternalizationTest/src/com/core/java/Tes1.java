@@ -14,7 +14,7 @@ public class Tes1 {
 					fileOutputStream);
 
 			Student student = new Student(99, "Singh", "singh@gmail.com",
-					"9743854499");
+					"12345");
 
 			objectOutputStream.writeObject(student);
 			System.out.println("Serialized..");

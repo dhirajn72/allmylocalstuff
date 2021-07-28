@@ -19,7 +19,7 @@ public class Test1 {
 			transaction = session.beginTransaction();
 
 			Customer customer = new Customer("himanshu", "dhiraj@gmail.com",
-					"9743854499", "24");
+					"12345", "24");
 			session.save(customer);
 			Address address = new Address("aurangabad", 843004, "bihar",
 					"India");

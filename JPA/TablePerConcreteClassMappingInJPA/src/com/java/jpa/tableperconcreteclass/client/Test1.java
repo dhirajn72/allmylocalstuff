@@ -18,8 +18,8 @@ public class Test1 {
 			entityTransaction.begin();
 
 			WeekdayStudent weekdayStudent = new WeekdayStudent("Singh",
-					"singhold@gmail.com", "9743854499", "singhnew@gmail",
-					"9742765205", "dk@gmail.com", "9742765205");
+					"singhold@gmail.com", "12345", "singhnew@gmail",
+					"12345", "dk@gmail.com", "12345");
 			weekdayStudent.setSid(01);
 			entityManager.persist(weekdayStudent);
 			entityTransaction.commit();

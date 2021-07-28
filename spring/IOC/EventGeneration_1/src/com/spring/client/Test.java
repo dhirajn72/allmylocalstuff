@@ -16,7 +16,7 @@ public class Test {
 				.getBean("generatorClass");
 
 		NewCustomer newCustomer = new NewCustomer(001, "Dhiraj",
-				"dhirajSingh@gmail.com", "9743854499");
+				"dhirajSingh@gmail.com", "12345");
 		eventGeneratorClass.Event(newCustomer);
 
 	}

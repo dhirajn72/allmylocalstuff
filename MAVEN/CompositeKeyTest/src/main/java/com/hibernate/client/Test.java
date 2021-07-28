@@ -21,13 +21,13 @@ public class Test {
 			SID sid3 = new SID("JLC-001", 77);
 
 			Student student = new Student(sid, "Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(student);
 			Student student2 = new Student(sid2, "Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(student2);
 			Student student3 = new Student(sid3, "Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(student3);
 			transaction.commit();
 			System.out.println("Check DB !!!");

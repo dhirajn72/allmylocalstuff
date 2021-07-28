@@ -14,7 +14,7 @@ public class RestDemo {
 	@Produces(MediaType.APPLICATION_XML)
 	public Customers getAllCustomer() {
 		Customer c = new Customer(88, "Dhiraj", "dhiraj@gmail.com",
-				"9743854499");
+				"12345");
 		Customers cs = new Customers();
 		cs.getList().add(c);
 		cs.getList().add(c);
@@ -29,7 +29,7 @@ public class RestDemo {
 	@Produces(MediaType.APPLICATION_XML)
 	public Customer getCustomerById(@PathParam("id") int id) {
 		Customer c = new Customer(id, "Dhiraj", "dhiraj@gmail.com",
-				"9743854499");
+				"12345");
 		return c;
 	}
 

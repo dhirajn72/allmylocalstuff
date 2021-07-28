@@ -21,7 +21,7 @@ public class Test3Ser {
 
 		try {
 			Student student = new Student(101, "Sri", "sri@gmail.com",
-					Long.parseLong("9743854499"));
+					Long.parseLong("12345"));
 			FileOutputStream fileOutputStream = new FileOutputStream(
 					"/home/dhiraj/stu.ser");
 

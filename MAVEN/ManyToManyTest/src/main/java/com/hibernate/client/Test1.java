@@ -37,7 +37,7 @@ public class Test1 {
 			vehicles.add(vehicles4);
 
 			Customers cust = new Customers("Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(cust);
 			cust.getVehicles().add(vehicles1);
 			cust.getVehicles().add(vehicles2);

@@ -27,7 +27,7 @@
 		<property name="sid" value="B-001" />
 		<property name="sname" value="Singh" />
 		<property name="email" value="dhiraj@gmail.com" />
-		<property name="phone" value="9743854499" />
+		<property name="phone" value="12345" />
 		<property name="phones">
 			<list>
 				<value>9934369400</value>

@@ -17,7 +17,7 @@ public class Test1 {
 			customer.setCid(101);
 			customer.setCname("Dhiraj");
 			customer.setEmail("dhiraj@gmail.com");
-			customer.setPhone(Long.parseLong("9743854499"));
+			customer.setPhone(Long.parseLong("12345"));
 
 			objectOutputStream.writeObject(customer);
 			System.out.println("Serialized..");

@@ -17,7 +17,7 @@ public class Test2 {
 				.getBean("customerDAO");
 		// customerDAO.deleteCustomer(20);
 /*		CustomerTO customerTO = new CustomerTO(15,"raj", "raj@yahoo.com",
-				Long.parseLong("9742765205"), "Bokaro");
+				Long.parseLong("12345"), "Bokaro");
 		 customerDAO.updateCustomer(customerTO);
 */
 		/*List<CustomerTO> list = customerDAO.getAllCustomers();

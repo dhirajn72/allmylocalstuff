@@ -15,14 +15,14 @@ public class Test {
 				.getBean("customerDao");
 		System.out.println("******add customer**********");
 		CustomerTO customerTO = new CustomerTO("kumar", "kumar@gmail.com",
-				"9743854499", "Ranchi", 24);
+				"12345", "Ranchi", 24);
 		customerDAO.addCustomer(customerTO);
 		/*System.out.println("******delete customer**********");
 
 		customerDAO.deleteCustomer(11);
 		System.out.println("*******update customer*********");
 		CustomerTO cust1 = new CustomerTO(10, "dk", "dk@gmail.com",
-				"9743854499", "Ranchi", 24);
+				"12345", "Ranchi", 24);
 		customerDAO.updateCustomer(cust1);
 		System.out.println("*******get all customer*********");
 		List<CustomerTO> list = customerDAO.getAllCustomer();

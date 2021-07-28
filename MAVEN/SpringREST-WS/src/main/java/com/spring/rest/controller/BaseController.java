@@ -17,7 +17,7 @@ public class BaseController {
 		System.out.println("/getAll");
 		Customers customers = new Customers();
 		CustomerTO to = new CustomerTO(99, "Dhiraj", "dhiraj@gmail.com",
-				"9743854499", 25);
+				"12345", 25);
 		customers.addCustomer(to);
 		customers.addCustomer(to);
 		customers.addCustomer(to);
@@ -32,7 +32,7 @@ public class BaseController {
 		System.out.println("/getAll");
 		Customers customers = new Customers();
 		CustomerTO to = new CustomerTO(id, "Dhiraj", "dhiraj@gmail.com",
-				"9743854499", 25);
+				"12345", 25);
 		return to;
 	}
 

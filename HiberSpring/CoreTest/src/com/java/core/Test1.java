@@ -8,17 +8,17 @@ import java.util.List;
 public class Test1 {
 	public static void main(String[] args) {
 		List<Employee> employees = new ArrayList<Employee>();
-		employees.add(new Employee(34, "dhiraj", "dk@gmail.com", 9743854499l));
+		employees.add(new Employee(34, "dhiraj", "dk@gmail.com", 12345l));
 		employees
-				.add(new Employee(54, "kumar", "kumar@gmail.com", 9743854499l));
-		employees.add(new Employee(24, "alok", "alok@gmail.com", 9743854499l));
+				.add(new Employee(54, "kumar", "kumar@gmail.com", 12345l));
+		employees.add(new Employee(24, "alok", "alok@gmail.com", 12345l));
 		employees.add(new Employee(76, "ranjan", "ranjan@gmail.com",
-				9743854499l));
+				12345l));
 		employees
-				.add(new Employee(23, "lohar", "lohar@gmail.com", 9743854499l));
-		employees.add(new Employee(98, "sri", "sri@gmail.com", 9743854499l));
+				.add(new Employee(23, "lohar", "lohar@gmail.com", 12345l));
+		employees.add(new Employee(98, "sri", "sri@gmail.com", 12345l));
 		employees
-				.add(new Employee(31, "raghu", "raghu@gmail.com", 9743854499l));
+				.add(new Employee(31, "raghu", "raghu@gmail.com", 12345l));
 		// Arrays.sort(employees, new EmpIdComparator());
 		Collections.sort(employees, new EmpIdComparator());
 

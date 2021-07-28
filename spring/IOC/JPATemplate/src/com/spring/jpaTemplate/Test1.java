@@ -21,7 +21,7 @@ public class Test1 {
 
 		/*
 		 * CustomerTO to = new CustomerTO("DHIRAJ", "dhiraj@yahoo.com",
-		 * "9743854499", "Bangalore", 25);
+		 * "12345", "Bangalore", 25);
 		 */
 		// customerDAO.addCustomer(to);
 
@@ -32,7 +32,7 @@ public class Test1 {
 
 		/*
 		 * CustomerTO to = new CustomerTO(3,"kumar", "kumar@yahoo.com",
-		 * "9743854499", "Bangalore", 25); customerDAO.updateCustomer(to);
+		 * "12345", "Bangalore", 25); customerDAO.updateCustomer(to);
 		 */
 
 		/*

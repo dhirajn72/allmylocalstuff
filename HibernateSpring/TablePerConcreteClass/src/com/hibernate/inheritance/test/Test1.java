@@ -19,8 +19,8 @@ public class Test1 {
 			Session session = sessionFactory.openSession();
 			transaction = session.beginTransaction();
 			WeekendStudent weekendStudent = new WeekendStudent("dk", "dks",
-					"dk@gmail.com", "9743854499", "dhiraj", "dhiraj@gmail.com",
-					"9742765205");
+					"dk@gmail.com", "12345", "dhiraj", "dhiraj@gmail.com",
+					"12345");
 			weekendStudent.setSid(1);
 			session.save(weekendStudent);
 

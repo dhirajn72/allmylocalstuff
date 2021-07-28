@@ -25,7 +25,7 @@ public class SidSearchAction extends Action {
 			stu.setSid(sid);
 			stu.setSname("Singh");
 			stu.setEmail("singh@gmail.com");
-			stu.setPhone("9743854499");
+			stu.setPhone("12345");
 			request.setAttribute("STU", stu);
 		} else {
 			throw new StudentNotFoundException(sid);

@@ -20,7 +20,7 @@ public class Test1 {
 			Address address = new Address("42", 560097, "KA");
 			session.save(address);
 			Customer customer = new Customer("Dhiraj", "dhiraj@gmail.com",
-					"9743854499", address);
+					"12345", address);
 			session.save(customer);
 
 			transaction.commit();

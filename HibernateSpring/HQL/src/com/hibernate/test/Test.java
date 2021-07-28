@@ -9,20 +9,20 @@ public class Test {
 
 		CustomerDAO dao = DaoFactory.getCustomerDAO();
 
-		CustomerTo to = new CustomerTo("rajjo", "rajjo@gmail.com", "9743854499",
+		CustomerTo to = new CustomerTo("rajjo", "rajjo@gmail.com", "12345",
 				24, 50000, "Visa", "Bangalore", "KA");
 
 		dao.addCustomer(to);
-		/*CustomerTo to1 = new CustomerTo("raj", "raj@gmail.com", "9743854499",
+		/*CustomerTo to1 = new CustomerTo("raj", "raj@gmail.com", "12345",
 				24, 50000, "Visa", "Bangalore", "KA");
 
 		dao.addCustomer(to1);
-		CustomerTo to2 = new CustomerTo("him", "him@gmail.com", "9743854499",
+		CustomerTo to2 = new CustomerTo("him", "him@gmail.com", "12345",
 				24, 50000, "master", "Bangalore", "KA");
 
 		dao.addCustomer(to2);
 		CustomerTo to3 = new CustomerTo("bijon", "bijon@gmail.com",
-				"9743854499", 24, 50000, "master", "Bangalore", "KA");
+				"12345", 24, 50000, "master", "Bangalore", "KA");
 
 		dao.addCustomer(to3);
 */

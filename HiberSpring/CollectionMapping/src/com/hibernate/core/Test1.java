@@ -24,7 +24,7 @@ public class Test1 {
 			emails.add("mk@gmail.com");
 			emails.add("sk@gmail.com");
 			Set<String> phones = new HashSet<String>();
-			phones.add("9743854499");
+			phones.add("12345");
 			phones.add("9743855599");
 			phones.add("9743856699");
 			phones.add("9743857799");

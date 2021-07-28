@@ -11,7 +11,7 @@ import com.hibernate.util.HibernateUtil;
 public class Test2 {
 	public static void main(String[] args) {
 
-		Customer customer = new Customer("DK", "dk@gmail.com", "9743854499");
+		Customer customer = new Customer("DK", "dk@gmail.com", "12345");
 
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		Transaction transaction = session.beginTransaction();

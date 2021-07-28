@@ -16,7 +16,7 @@
 		<servlet-class>com.servlets.org.HelloServlet</servlet-class>
 		<init-param>
 			<param-name>email</param-name>
-			<param-value>dhirajn72@gmail.com</param-value>
+			<param-value>info@gmail.com</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>
@@ -29,7 +29,7 @@
 		<servlet-class>com.servlets.org.HaiServlet</servlet-class>
 		<init-param>
 			<param-name>email</param-name>
-			<param-value>dhirajkr.info@gmail.com</param-value>
+			<param-value>info@gmail.com</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

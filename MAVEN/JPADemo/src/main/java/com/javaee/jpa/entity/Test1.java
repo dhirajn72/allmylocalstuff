@@ -18,7 +18,7 @@ public class Test1 {
 			tx.begin();
 
 			Customer c1 = new Customer("singh", "singh@gmail.com",
-					Long.parseLong("9743854499"));
+					Long.parseLong("12345"));
 			em.persist(c1);
 			tx.commit();
 			em.close();

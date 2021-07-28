@@ -29,8 +29,8 @@ public class Test {
 			emails.add("dhiraj@google.com");
 
 			Set<String> phones = new HashSet<String>();
-			phones.add("9743854499");
-			phones.add("9742765205");
+			phones.add("12345");
+			phones.add("12345");
 			phones.add("9744338877");
 
 			Map<String, String> refs = new HashMap<String, String>();

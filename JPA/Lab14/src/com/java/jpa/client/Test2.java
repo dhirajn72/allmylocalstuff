@@ -12,7 +12,7 @@ public class Test2 {
 		// customerDAO.removeCustomer(4);
 
 		CustomerTO customerTO = new CustomerTO(2, "SRI", "sri@yahoo.com",
-				"9742765205");
+				"12345");
 		// customerDAO.mergeCustomer(customerTO);
 
 		CustomerTO to = customerDAO.getCustomerByCid(5);

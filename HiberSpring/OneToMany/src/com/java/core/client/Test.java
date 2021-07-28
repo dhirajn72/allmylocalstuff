@@ -25,8 +25,8 @@ public class Test {
 		Vehicle vehicle2 = new Vehicle("Innova", "2010", 1800000);
 		session.save(vehicle2);
 
-		Customer customer = new Customer("Dhiraj", "dhirajkr.info@gmail.com",
-				"9743854499");
+		Customer customer = new Customer("Dhiraj", "info@gmail.com",
+				"12345");
 		customer.setAddress(address);
 		session.save(customer);
 

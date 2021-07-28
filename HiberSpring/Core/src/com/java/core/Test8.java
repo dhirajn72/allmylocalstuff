@@ -9,7 +9,7 @@ public class Test8 {
 			System.out.println(jlc);
 			System.out.println("************");
 
-			JLC jlc2 = new JLC(88, "DK", "dk@gmail.com", "9743854499");
+			JLC jlc2 = new JLC(88, "DK", "dk@gmail.com", "12345");
 			System.out.println(jlc2);
 			JLC jlc3 = (JLC) jlc2.clone();
 			System.out.println(jlc3);

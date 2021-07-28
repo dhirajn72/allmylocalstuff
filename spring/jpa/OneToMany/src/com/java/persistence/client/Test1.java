@@ -21,7 +21,7 @@ public class Test1 {
 			transaction = session.beginTransaction();
 
 			Customer customer1 = new Customer("himanshu", "himan@gmail.com",
-					"9743854499", "24");
+					"12345", "24");
 			session.save(customer1);
 
 			Vehicle vehicle1 = new Vehicle("honda", "SS", "50000");
@@ -36,7 +36,7 @@ public class Test1 {
 			vehicle3.setCustomer(customer1);
 
 			Customer customer2 = new Customer("raj", "raj@gmail.com",
-					"9743854499", "24");
+					"12345", "24");
 			session.save(customer2);
 
 			Vehicle vehicle4 = new Vehicle("honda", "SS", "50000");

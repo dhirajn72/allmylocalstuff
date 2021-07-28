@@ -18,7 +18,7 @@ public class BaseService {
 	public Customers getAll() {
 		Customers customers = new Customers();
 		CustomerTO to = new CustomerTO(55, "dhiraj", "dhiraj@gmail.com",
-				"9743854499");
+				"12345");
 		customers.addCustomer(to);
 		customers.addCustomer(to);
 		customers.addCustomer(to);
@@ -31,14 +31,14 @@ public class BaseService {
 			MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }, method = RequestMethod.GET)
 	public CustomerTO getCustomerById(@PathVariable("id") String id) {
 		CustomerTO to = new CustomerTO(Integer.parseInt(id), "Singh",
-				"singh@gmail.com", "9743854499");
+				"singh@gmail.com", "12345");
 		return to;
 	}
 
 	@RequestMapping(value = "/getById/", method = RequestMethod.GET)
 	public void getFormData(@ModelAttribute("cust") String id) {
 		CustomerTO to = new CustomerTO(Integer.parseInt(id), "Singh",
-				"singh@gmail.com", "9743854499");
+				"singh@gmail.com", "12345");
 		System.out.println(to);
 
 	}

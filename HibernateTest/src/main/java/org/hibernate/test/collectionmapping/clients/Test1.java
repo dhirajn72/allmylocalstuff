@@ -29,8 +29,8 @@ public class Test1 {
 			emails.add("dhiraj@gmail.com");
 			emails.add("kumar@gmail.com");
 			Set<Long> phones = new HashSet<Long>();
-			phones.add(9743854499l);
-			phones.add(9742765205l);
+			phones.add(12345l);
+			phones.add(12345l);
 
 			Map<String, Long> refs = new HashMap<String, Long>();
 			refs.put("aaa", new Long(123));

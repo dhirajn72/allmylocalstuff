@@ -9,7 +9,7 @@
 		<cid>101</cid>
 		<cname>Singh</cname>
 		<email>singh@gmail.com</email>
-		<phone>9743854499</phone>
+		<phone>12345</phone>
 	</customer>
 	<customer>
 		<account>
@@ -20,7 +20,7 @@
 		<cid>101</cid>
 		<cname>Singh</cname>
 		<email>singh@gmail.com</email>
-		<phone>9743854499</phone>
+		<phone>12345</phone>
 	</customer>
 	<customer>
 		<account>
@@ -31,6 +31,6 @@
 		<cid>101</cid>
 		<cname>Singh</cname>
 		<email>singh@gmail.com</email>
-		<phone>9743854499</phone>
+		<phone>12345</phone>
 	</customer>
 </customers>

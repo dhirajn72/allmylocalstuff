@@ -27,7 +27,7 @@ public class Test1 {
 			session.save(vehicles3);
 
 			Customer customer = new Customer("singh", "singh@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(customer);
 			vehicles1.setCustomer(customer);
 			vehicles2.setCustomer(customer);
@@ -39,7 +39,7 @@ public class Test1 {
 			session.save(vehicles5);
 
 			Customer customer1 = new Customer("kumar", "kumar@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(customer1);
 			vehicles4.setCustomer(customer1);
 			vehicles5.setCustomer(customer1);
@@ -50,7 +50,7 @@ public class Test1 {
 			session.save(vehicles7);
 
 			Customer customer3 = new Customer("dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(customer3);
 			vehicles6.setCustomer(customer3);
 			vehicles7.setCustomer(customer3);
@@ -63,7 +63,7 @@ public class Test1 {
 			session.save(vehicles10);
 
 			Customer customer4 = new Customer("DK", "DK@gmail.com",
-					"9743854499");
+					"12345");
 			session.save(customer4);
 			vehicles8.setCustomer(customer4);
 			vehicles9.setCustomer(customer4);

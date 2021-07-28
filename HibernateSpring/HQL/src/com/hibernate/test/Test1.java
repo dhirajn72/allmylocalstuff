@@ -13,7 +13,7 @@ public class Test1 {
 		CustomerDAO dao = DaoFactory.getCustomerDAO();
 
 /*		CustomerTo to = new CustomerTo(3, "Dhiraj", "dk@gmail.com",
-				"9743854499", 24, 50000, "Visa", "Bangalore", "Bihar");
+				"12345", 24, 50000, "Visa", "Bangalore", "Bihar");
 */
 		// dao.updateCustomer(to);
 

@@ -11,7 +11,7 @@ public class Test6 {
 					"src/jlc.ser");
 			ObjectOutputStream objectOutputStream = new ObjectOutputStream(
 					fileOutputStream);
-			JLC jlc = new JLC(99, "dhiraj", "dhiraj@gmail.com", "9743854499");
+			JLC jlc = new JLC(99, "dhiraj", "dhiraj@gmail.com", "12345");
 			objectOutputStream.writeObject(jlc);
 			System.out.println("Check src folder.");
 

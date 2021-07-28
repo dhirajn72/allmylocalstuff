@@ -18,7 +18,7 @@ public class MarshallingTest {
 				.getBean("mainMarshaller");
 		Account account = new Account("SBI-001", 10000, "CA");
 		Customer customer = new Customer(101, "Singh", "singh@gmail.com",
-				"9743854499", account);
+				"12345", account);
 		Customers customers = new Customers();
 		customers.addCustomer(customer);
 		customers.addCustomer(customer);

@@ -18,8 +18,8 @@ public class Test {
 		Address address = new Address(42, "MS Palya", "560097", "KA");
 		session.save(address);
 
-		Customer customer = new Customer("Dhiraj", "dhirajkr.info@gmail.com",
-				"9743854499");
+		Customer customer = new Customer("Dhiraj", "info@gmail.com",
+				"12345");
 		session.save(customer);
 		customer.setAddress(address);
 		transaction.commit();

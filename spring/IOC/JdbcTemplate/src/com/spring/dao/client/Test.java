@@ -23,7 +23,7 @@ public class Test {
 
 		/*
 		 * CustomerTO to = new CustomerTO(CIDGenerator.getNextCID(), "Singh",
-		 * "singh@gmail.com", "9743854499", "bangalore", 24);
+		 * "singh@gmail.com", "12345", "bangalore", 24);
 		 * customerDAO.addCustomer(to);
 		 */
 		// deleteing customer

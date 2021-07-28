@@ -16,7 +16,7 @@ public class TestMar {
 				.getBean("marshallerUnmarshaller");
 		Address address = new Address("#42", "MS Palya", "KA", 560097);
 		Customer customer = new Customer(99, "Dhiraj", "dhiraj@gmail.com",
-				"9743854499", address);
+				"12345", address);
 		Customers customers = new Customers();
 		for (int i = 0; i < 10; i++) {
 			customers.addCustomer(customer);

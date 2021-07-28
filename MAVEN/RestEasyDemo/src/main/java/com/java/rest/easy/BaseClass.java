@@ -14,7 +14,7 @@ public class BaseClass {
 	public Customers getAll() {
 		System.out.println("getAll()");
 		Customer customer = new Customer(99, "Singh", "singh@gmail.com",
-				"9743854499");
+				"12345");
 		Customers customers = new Customers();
 		customers.addCustomer(customer);
 		customers.addCustomer(customer);

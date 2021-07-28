@@ -11,37 +11,37 @@ public class Test1 {
 		CustomerDAO customerDAO = CustomerDAOFactory.getCustomerDAO();
 
 		CustomerTO customerTO = new CustomerTO("chotu", "chotu@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		CustomerTO customerTO1 = new CustomerTO("dk", "dk@gmail.com",
-				"9743854499", "ranchi");
+				"12345", "ranchi");
 
 		CustomerTO customerTO2 = new CustomerTO("ashish", "ashish@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		CustomerTO customerTO3 = new CustomerTO("shekhar", "shekhar@gmail.com",
-				"9743854499", "rajasthan");
+				"12345", "rajasthan");
 
 		CustomerTO customerTO4 = new CustomerTO("ranjan", "rabjan@gmail.com",
-				"9743854499", "bihar");
+				"12345", "bihar");
 
 		CustomerTO customerTO5 = new CustomerTO("rahul", "rahul@gmail.com",
-				"9743854499", "gaya");
+				"12345", "gaya");
 
 		CustomerTO customerTO6 = new CustomerTO("MK", "mk@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		CustomerTO customerTO7 = new CustomerTO("SK", "sk@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		CustomerTO customerTO8 = new CustomerTO("rj", "rj@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		CustomerTO customerTO9 = new CustomerTO("sri", "sri@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		CustomerTO customerTO10 = new CustomerTO("nivas", "nivas@gmail.com",
-				"9743854499", "bokaro");
+				"12345", "bokaro");
 
 		customerDAO.addCustomer(customerTO);
 		customerDAO.addCustomer(customerTO1);

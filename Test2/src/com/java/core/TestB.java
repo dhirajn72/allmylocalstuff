@@ -36,7 +36,7 @@ public class TestB {
 			/*
 			 * resultSet.absolute(5); resultSet.updateInt(1, 63);
 			 * resultSet.updateString(2, "MK"); resultSet.updateString(3,
-			 * "mk@gmail.com"); resultSet.updateString(3, "9743854499");
+			 * "mk@gmail.com"); resultSet.updateString(3, "12345");
 			 * resultSet.updateRow();
 			 * System.out.println("**changed,check DB**");
 			 * System.out.println("**Deleting 5th record**");

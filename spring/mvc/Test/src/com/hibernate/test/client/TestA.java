@@ -17,7 +17,7 @@ public class TestA {
 			SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
 			Session session = sessionFactory.openSession();
 			transaction = session.beginTransaction();
-			Customer customer = new Customer("DK", "dk@gmail.com", "9743854499");
+			Customer customer = new Customer("DK", "dk@gmail.com", "12345");
 			session.save(customer);
 			transaction.commit();
 			sessionFactory.close();

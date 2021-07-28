@@ -46,7 +46,7 @@ public class SidSearchController {
 			to.setCid(sid);
 			to.setCname("DK");
 			to.setEmail("dk@gmail.com");
-			to.setPhone("9743854499");
+			to.setPhone("12345");
 			httpServletRequest.setAttribute("TO", to);
 			result = "success";
 

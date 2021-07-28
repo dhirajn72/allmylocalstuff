@@ -12,7 +12,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class MailService {
-	private static String UNAME = "dhirajkr.info@gmail.com";
+	private static String UNAME = "info@gmail.com";
 	private static String PASSWORD = "DhirajSingh90";
 
 	public static void sendMail(String to, String sub, String data) {
@@ -22,7 +22,7 @@ public class MailService {
 			msg.setFrom(new InternetAddress(UNAME, "ACI WorldWide"));
 			msg.setRecipient(Message.RecipientType.TO, new InternetAddress(to));
 			msg.setRecipient(Message.RecipientType.BCC, new InternetAddress(
-					"dhirajn72@gmail.com"));
+					"info@gmail.com"));
 			msg.setSentDate(new Date());
 			msg.setContent(data, "text/html");
 			Transport.send(msg);

@@ -23,7 +23,7 @@ public class Test {
 				callableStatement.setInt(1, i);
 				callableStatement.setString(2, "Dhiraj");
 				callableStatement.setString(3, "dhiraj@gmail.com");
-				callableStatement.setString(4, "9743854499");
+				callableStatement.setString(4, "12345");
 				callableStatement.executeQuery();
 
 				System.out.println("Check DB !!");

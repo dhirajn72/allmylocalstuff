@@ -25,8 +25,8 @@ public class Test1 {
 			emails.add("dhiraj@gmail.com");
 
 			Set<String> phones = new HashSet<String>();
-			phones.add("9743854499");
-			phones.add("9742765205");
+			phones.add("12345");
+			phones.add("12345");
 			phones.add("9934369400");
 
 			Student student = new Student("dhiraj", "dk@gmail.com",

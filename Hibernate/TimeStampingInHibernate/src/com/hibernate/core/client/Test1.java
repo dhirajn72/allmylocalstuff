@@ -21,7 +21,7 @@ public class Test1 {
 			transaction = session.beginTransaction();
 
 			Customer customer = new Customer("Dhiraj", "dhiraj@gmail.com",
-					"9743854499", new Date());
+					"12345", new Date());
 			session.save(customer);
 			transaction.commit();
 

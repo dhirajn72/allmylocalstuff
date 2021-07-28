@@ -14,7 +14,7 @@ public class Test {
 		CustomerDAO dao = (CustomerDAO) applicationContext
 				.getBean("customerDaoImpl");
 
-		CustomerTO to = new CustomerTO(88, "dk", "dk@gmail.com", "9743854499");
+		CustomerTO to = new CustomerTO(88, "dk", "dk@gmail.com", "12345");
 
 		dao.addCustomer(to);
 		System.out.println("Check DB !!");

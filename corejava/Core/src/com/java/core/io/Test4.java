@@ -13,7 +13,7 @@ public class Test4 {
 			ObjectOutputStream objectOutputStream = new ObjectOutputStream(
 					fileOutputStream);
 			Person person = new Person(99, "Singh", "singh@gmail.com",
-					"9743854499");
+					"12345");
 			Person.uid = 99999;
 			System.out.println(person);
 			objectOutputStream.writeObject(person);

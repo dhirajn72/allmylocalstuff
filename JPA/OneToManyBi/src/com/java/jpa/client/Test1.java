@@ -20,25 +20,25 @@ public class Test1 {
 			entityTransaction.begin();
 
 			Customer customer = new Customer("Singh", "singh@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer);
 			Vehicle vehicle = new Vehicle("Nano", "New", 100000);
 			entityManager.persist(vehicle);
 
 			Customer customer1 = new Customer("kumar", "kumar@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer1);
 			Vehicle vehicle2 = new Vehicle("scorpio", "2011", 800000);
 			entityManager.persist(vehicle2);
 
 			Customer customer2 = new Customer("Dhiraj", "dhiraj@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer2);
 			Vehicle vehicle3 = new Vehicle("innova", "2014", 100000);
 			entityManager.persist(vehicle3);
 
 			Customer customer3 = new Customer("Kumar", "kumar@gmail.com",
-					"9743854499");
+					"12345");
 			entityManager.persist(customer3);
 			Vehicle vehicle4 = new Vehicle("bolero", "2014", 100000);
 			entityManager.persist(vehicle4);

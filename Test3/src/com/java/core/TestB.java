@@ -30,7 +30,7 @@ public class TestB {
 			rowSet.updateInt(1, 11);
 			rowSet.updateString(2, "rajeev");
 			rowSet.updateString(3, "raj@gmail.com");
-			rowSet.updateString(4, "9742765205");
+			rowSet.updateString(4, "12345");
 			rowSet.updateRow();
 			while (rowSet.next()) {
 				System.out

@@ -91,19 +91,19 @@ public class ComparatorTest {
 	public static void main(String[] args) {
 
 		Employee employee = new Employee(99, "dhiraj",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 		Employee employee2 = new Employee(54, "Singh",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 		Employee employee3 = new Employee(65, "apple",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 		Employee employee4 = new Employee(23, "alok",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 		Employee employee5 = new Employee(76, "ranjan",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 		Employee employee6 = new Employee(12, "lohar",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 		Employee employee7 = new Employee(72, "raghu",
-				"dhirajkr.info@gmail.com", "9743854499");
+				"info@gmail.com", "12345");
 
 		List<Employee> employees = new ArrayList<Employee>();
 		employees.add(employee);

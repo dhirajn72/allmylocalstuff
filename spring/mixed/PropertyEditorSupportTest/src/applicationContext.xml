@@ -21,7 +21,7 @@
 		<property name="studentID" value="B99-099" />
 		<property name="sname" value="Dhiraj Singh" />
 		<property name="email" value="dhiraj@gmail.com" />
-		<property name="phone" value="9743854499" />
+		<property name="phone" value="12345" />
 		<property name="age" value="25" />
 		<property name="emails"
 			value="dhiraj@yahoo.com,singh@yahoo.com,kumar@yahoo.com,sri@yahoo.com" />

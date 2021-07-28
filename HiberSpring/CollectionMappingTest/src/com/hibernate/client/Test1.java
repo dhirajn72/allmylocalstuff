@@ -19,7 +19,7 @@ public class Test1 {
 		String[] arr = { "X", "XII", "BCA", "MCA" };
 
 		List<String> phones = new ArrayList<String>();
-		phones.add("9743854499");
+		phones.add("12345");
 		phones.add("9743855599");
 		phones.add("9743856699");
 
